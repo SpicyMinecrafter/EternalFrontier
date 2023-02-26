@@ -88,3 +88,106 @@
 	song = 'sound/music/europa/ho.ogg'
 	license = /decl/license/cc_by_nc_sa_3_0
 	url = "https://pulseemitter.bandcamp.com/track/nebula"
+
+/decl/music_track/aintiright
+	title = "Aint I Right"
+	song = 'sound/music/europa/AintIRight.ogg'
+
+/decl/music_track/battlehymnoftherepublic
+	title = "Battle Hymn Of The Republic"
+	song = 'sound/music/europa/BattleHymnOfTheRepublic.ogg'
+
+/decl/music_track/blackbetty
+	title = "Black Betty"
+	song = 'sound/music/europa/BlackBetty.ogg'
+
+/decl/music_track/chinatown
+	title = "Chinatown"
+	song = 'sound/music/europa/Chinatown.ogg'
+
+/decl/music_track/countryroads
+	title = "Country Roads"
+	song = 'sound/music/europa/CountryRoads.ogg'
+
+/decl/music_track/debtcollector
+	title = "Debt Collector"
+	song = 'sound/music/europa/DebtCollector.ogg'
+
+/decl/music_track/deumverum
+	title = "Deum Verum"
+	song = 'sound/music/europa/DeumVerum.ogg'
+
+/decl/music_track/dontstopmenow
+	title = "Don't Stop Me Now"
+	song = 'sound/music/europa/DontStopMeNow.ogg'
+
+/decl/music_track/einekleinenachtmusik
+	title = "Eine Kleine Nachtmusik"
+	song = 'sound/music/europa/einekleinenachtmusik.ogg'
+
+/decl/music_track/electriccity
+	title = "Electric City"
+	song = 'sound/music/europa/ElectricCity.ogg'
+
+/decl/music_track/fasterthanlight
+	title = "Faster Than Light"
+	song = 'sound/music/europa/FasterThanLight.ogg'
+
+/decl/music_track/fortunateson
+	title = "Fortunate Son"
+	song = 'sound/music/europa/FortunateSon.ogg'
+
+/decl/music_track/herecomesthebride
+	title = "Here Comes The Bride"
+	song = 'sound/music/europa/HereComesTheBride.ogg'
+
+// This one is 100% Rabbit's fault.
+/decl/music_track/ibeatmymeat
+	title = "I Beat My Meat"
+	song = 'sound/music/europa/IBeatMyMeat.ogg'
+
+/decl/music_track/grand
+	title = "Grand"
+	song = 'sound/music/europa/Grand.ogg'
+
+/decl/music_track/mapleleafrag
+	title = "Maple Leaf Rag"
+	song = 'sound/music/europa/MapleLeafRag.ogg'
+
+/decl/music_track/outbreak
+	title = "Outbreak"
+	song = 'sound/music/europa/Outbreak.ogg'
+
+/decl/music_track/riseupdeadman
+	title = "Rise Up Dead Man"
+	song = 'sound/music/europa/RiseUpDeadMan.ogg'
+
+/decl/music_track/spaceasshole
+	title = "Space Asshole"
+	song = 'sound/music/europa/SpaceAsshole.ogg'
+
+/decl/music_track/theballadofserenity
+	title = "The Ballad Of Serenity"
+	song = 'sound/music/europa/TheBalladOfSerenity.ogg'
+
+/decl/music_track/thecause
+	title = "The Cause"
+	song = 'sound/music/europa/TheCause.ogg'
+
+/decl/music_track/thecity
+	title = "The City"
+	song = 'sound/music/europa/TheCity.ogg'
+
+/decl/music_track/turbokiller
+	title = "Turbo Killer"
+	song = 'sound/music/europa/TurboKiller.ogg'
+
+/decl/music_track/ussrnationalanthem
+	title = "USSR National Anthem"
+	song = 'sound/music/europa/USSRNationalAnthem.ogg'
+
+/decl/music_track/wealllift
+	title = "We All Lift"
+	song = 'sound/music/europa/WeAllLift.ogg'
+
+
