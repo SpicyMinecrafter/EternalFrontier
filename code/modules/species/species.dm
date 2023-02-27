@@ -54,11 +54,7 @@ var/global/const/DEFAULT_SPECIES_HEALTH = 200
 	var/show_ssd = "fast asleep"
 	var/short_sighted                         // Permanent weldervision.
 	var/light_sensitive                       // Ditto, but requires sunglasses to fix
-<<<<<<< HEAD
-	var/blood_volume = SPECIES_BLOOD_DEFAULT // Initial blood volume.
-=======
 	var/blood_volume = SPECIES_BLOOD_DEFAULT  // Initial blood volume.
->>>>>>> parent of fe81332884 (Less Hunger)
 	var/hunger_factor = DEFAULT_HUNGER_FACTOR // Multiplier for hunger.
 	var/thirst_factor = DEFAULT_THIRST_FACTOR // Multiplier for thirst.
 	var/taste_sensitivity = TASTE_NORMAL      // How sensitive the species is to minute tastes.
