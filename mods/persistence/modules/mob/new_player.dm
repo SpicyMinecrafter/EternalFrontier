@@ -41,7 +41,7 @@
 	output += "</div>"
 	output += "</div>"
 
-	panel = new(src, "Welcome","Welcome to [global.using_map.full_name]", 560, 280, src)
+	panel = new(src, "Welcome","Welcome to Kleibkhar Mining Colony", 560, 280, src)
 	panel.set_window_options("can_close=0")
 	panel.set_content(JOINTEXT(output))
 	panel.open()
@@ -61,7 +61,7 @@
 	if(href_list["setupCharacter"])
 		newCharacterPanel()
 		return 0
-		 
+
 	if(href_list["deleteCharacter"])
 		characterSelect(CHARSELECTDELETE)
 		return 0
@@ -95,18 +95,18 @@
 		joinGame()
 
 	if(href_list["Delete"])
-		var/char_name = href_list["Delete"]	
+		var/char_name = href_list["Delete"]
 		if(charselect)
 			charselect.close()
 			charselect = null
 		if(input("Are you SURE you want to delete [char_name]? THIS IS PERMANENT. Enter the character\'s full name to confirm.", "DELETE A CHARACTER", "") == char_name)
-			
+
 			var/new_db_connection = FALSE
 			if(!check_save_db_connection())
 				if(!establish_save_db_connection())
 					CRASH("new_player: Couldn't establish DB connection while deleting a character!")
 				new_db_connection = TRUE
-			
+
 			var/DBQuery/char_query = dbcon_save.NewQuery("SELECT `key` FROM `limbo` WHERE `type` = '[LIMBO_MIND]' AND `metadata` = '[key]' AND `metadata2` = '[char_name]'")
 			if(!char_query.Execute())
 				to_world_log("CHARACTER DESERIALIZATION FAILED: [char_query.ErrorMsg()].")
@@ -117,7 +117,7 @@
 				to_chat(src, SPAN_NOTICE("Character Delete Completed."))
 			else
 				to_chat(src, SPAN_NOTICE("Delete Failed! Contact a developer."))
-			
+
 			if(new_db_connection)
 				close_save_db_connection()
 
@@ -126,7 +126,7 @@
 		if(M.loc && !istype(M, /mob/new_player) && (M.saved_ckey == ckey || M.saved_ckey == "@[ckey]"))
 			to_chat(src, SPAN_NOTICE("You already have a character in game!"))
 			return
-			
+
 	if(!check_rights(R_DEBUG))
 		client.prefs.real_name = null	// This will force players to set a new character name every time they open character creator
 										// Meaning they cant just click finalize as soon as they open the character creator. They are forced to engage.
@@ -152,9 +152,9 @@
 	var/func_text = "Load"
 	if(func == CHARSELECTDELETE)
 		func_text = "Delete"
-	var/slots = 2
+	var/slots = 1
 	if(check_rights(R_DEBUG) || check_rights(R_ADMIN))
-		slots+=2
+		slots+=0
 	var/output = list()
 	output += "<div style='text-align:center;'>"
 	output += "Select a character to [func_text].<br><br>"
@@ -244,7 +244,7 @@
 		person.key = key
 		person.on_persistent_join()
 		qdel(src)
-		
+
 		if(new_db_connection)
 			close_save_db_connection()
 		return

@@ -22,15 +22,19 @@
 	emergency_shuttle_recall_message = "The emergency shuttle has been recalled"
 
 	lobby_screens = list(
-		'maps/kleibkhar/lobby/KleibkharTitle.gif'
+		'maps/kleibkhar/lobby/EF-BG.png'
 	)
-	lobby_tracks = list(
-		/decl/music_track/inorbit
-	)
+	lobby_tracks = list(\
+		/decl/music_track/redsectora,
+		/decl/music_track/holdon,
+		/decl/music_track/bringinghometherain,
+		/decl/music_track/gimmeshelter,
+		/decl/music_track/thehorror)
+
 
 	starting_money = 5000
 	department_money = 0
 	salary_modifier = 0.2
 
 /datum/map/kleibkhar/get_map_info()
-	return "Kleibkhar Independent Colony. A diverse new commercial venture on the fringe of known space."
+	return "Several years ago the galactic war ended with most worlds completely destroyed. Many homeworlds were lost and Earth was among them. The remnants of each species scatters to avoid the lawless populated systems or what was left of them. One way or another you found yourself here, ready to start a new life on a cold yet habitable rimworld."

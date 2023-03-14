@@ -29,6 +29,18 @@
 				continue
 
 	design_cache = sortTim(design_cache, /proc/cmp_name_asc)
+	if(length(add_mat_to_storage_cap))
+		var/need_storage_recalc = FALSE
+		for(var/mat in add_mat_to_storage_cap)
+			if(mat in base_storage_capacity)
+				continue
+			need_storage_recalc = TRUE
+			base_storage_capacity[mat] = (SHEET_MATERIAL_AMOUNT * base_storage_capacity_mult)
+			if(!(mat in stored_material))
+				stored_material[mat] = 0
+
+		if(need_storage_recalc)
+			RefreshParts()
 
 	if(length(add_mat_to_storage_cap))
 		var/need_storage_recalc = FALSE

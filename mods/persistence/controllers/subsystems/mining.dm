@@ -46,8 +46,8 @@ SUBSYSTEM_DEF(mining)
 	init_order = SS_INIT_DEFAULT
 	runlevels = RUNLEVEL_GAME
 
-	var/regen_interval = 270	// How often in minutes to generate mining levels.
-	var/warning_wait = 2   		// How long to wait before regenerating the mining level after a warning.
+	var/regen_interval = 420	// How often in minutes to generate mining levels. lol 420
+	var/warning_wait = 3   		// How long to wait before regenerating the mining level after a warning.
 	var/warning_message = "The ground begins to shake beneath your feet!"
 	var/collapse_message = "A deep rumbling is felt in the ground as the mines collapse!"
 	var/collapse_imminent = FALSE
@@ -147,7 +147,7 @@ SUBSYSTEM_DEF(mining)
 			LAZYREMOVE(contents, removed_ore)
 			qdel(removed_ore)
 
-		M.take_overall_damage(100, 0, null)
+		M.take_overall_damage(500, 400, null)
 
 		if(emergency_turf)
 			M.forceMove(emergency_turf)

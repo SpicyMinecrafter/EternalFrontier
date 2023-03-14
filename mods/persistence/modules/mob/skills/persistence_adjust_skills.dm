@@ -1,5 +1,5 @@
-#define TIME_PER_POINT       30 MINUTES
-#define MAX_SKILL_POINTS    100
+#define TIME_PER_POINT       60 MINUTES
+#define MAX_SKILL_POINTS    140
 
 /datum/skillset
 	var/time_active = 0								 // Players get points over time.
@@ -8,7 +8,7 @@
 
 	var/datum/skillset/temp_skillset				 // Temporary skillset while adjusting skills.
 
-	var/list/min_skill_level = list()				 // Minimum level that a skill cannot go beneath. 
+	var/list/min_skill_level = list()				 // Minimum level that a skill cannot go beneath.
 	var/list/textbook_skills = list()				 // Skills that are being learned via textbook. Maximum MAX_TEXTBOOK_SKILLS per character.
 
 	var/last_read_time = 0
@@ -44,7 +44,7 @@
 		return
 	if(last_read_time && (world.realtime < last_read_time + TEXTBOOK_COOLDOWN))
 		return
-	
+
 	var/skill_name = initial(S.name)
 	textbook_skills[S]++
 	last_read_time = world.realtime
@@ -109,7 +109,7 @@
 			HTML +=	"<br><b>[level_name]</b>: [S.levels[level_name]]<br>"
 		show_browser(usr, jointext(HTML, null), "window=\ref[usr]skillinfo")
 		return TOPIC_HANDLED
-	
+
 	else if(href_list["finalize_skills"])
 		var/confirm = alert(usr, "Are you sure you want to make the following changes to your skills? This cannot be undone!", "Confirm", "Yes", "No")
 		if(confirm && skillset.temp_skillset)

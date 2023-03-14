@@ -14,6 +14,7 @@ var/global/list/levels_by_id = list()
 	var/base_turf
 	var/list/connects_to
 	var/level_flags
+	var/datum/gas_mixture/exterior_atmosphere
 
 INITIALIZE_IMMEDIATE(/obj/abstract/level_data)
 /obj/abstract/level_data/Initialize()
@@ -52,7 +53,7 @@ INITIALIZE_IMMEDIATE(/obj/abstract/level_data)
 
 /obj/abstract/level_data/proc/find_connected_levels(var/list/found)
 	for(var/other_id in connects_to)
-		var/obj/abstract/level_data/neighbor = global.levels_by_id[other_id] 
+		var/obj/abstract/level_data/neighbor = global.levels_by_id[other_id]
 		neighbor.add_connected_levels(found)
 
 /obj/abstract/level_data/proc/add_connected_levels(var/list/found)
@@ -63,7 +64,7 @@ INITIALIZE_IMMEDIATE(/obj/abstract/level_data)
 	if(!length(connects_to))
 		return
 	for(var/other_id in connects_to)
-		var/obj/abstract/level_data/neighbor = global.levels_by_id[other_id] 
+		var/obj/abstract/level_data/neighbor = global.levels_by_id[other_id]
 		neighbor.add_connected_levels(found)
 
 // Mappable subtypes.
@@ -78,6 +79,12 @@ INITIALIZE_IMMEDIATE(/obj/abstract/level_data)
 /obj/abstract/level_data/player_level
 	name = "Player Level"
 	level_flags = (ZLEVEL_CONTACT|ZLEVEL_PLAYER)
+
+/obj/abstract/level_data/atmoschange
+    exterior_atmosphere = list(
+        /decl/material/gas/carbon_monoxide = MOLES_O2STANDARD,
+        /decl/material/gas/oxygen = MOLES_N2STANDARD
+    )
 
 #undef ZLEVEL_STATION
 #undef ZLEVEL_ADMIN

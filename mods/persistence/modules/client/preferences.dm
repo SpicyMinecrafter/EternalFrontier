@@ -81,12 +81,12 @@
 			return
 		var/slots = 2
 		if(check_rights(R_DEBUG) || check_rights(R_ADMIN))
-			slots+=2
-		var/count = 0
+			slots+=0
+		var/count = 1
 		char_query = dbcon.NewQuery("SELECT `key` FROM `limbo` WHERE `type` = '[LIMBO_MIND]' AND `metadata` = '[client.key]'")
 		if(!char_query.Execute())
 			to_world_log("CHARACTER DESERIALIZATION FAILED: [char_query.ErrorMsg()].")
-		for(var/i=1,i>=slots,i++)
+		for(var/i=1, i>=slots, i++)
 			if(char_query.NextRow()) count++
 		if(count >= slots)
 			to_chat(usr, "<span class='danger'>You already have the maximum amount of characters. You must delete one to create another.</span>")
@@ -97,12 +97,12 @@
 
 		save_preferences()
 		save_character()
-		
+
 		if(isnewplayer(client.mob))
 			close_char_dialog(usr)
 			var/mob/new_player/M = client.mob
 			M.AttemptLateSpawn(SSjobs.get_by_path(global.using_map.default_job_type))
-			
+
 
 	if(href_list["save"])
 		save_preferences()

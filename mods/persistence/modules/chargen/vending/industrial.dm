@@ -9,19 +9,19 @@
 	vend_delay = 11
 	base_type = /obj/machinery/vending/infini/industrial
 	products = list(
-		/obj/item/chargen_box/industrial/engineering = 999,
-		/obj/item/chargen_box/industrial/firefighter = 999,
-		/obj/item/chargen_box/industrial/building = 999,
-		/obj/item/chargen_box/industrial/steel = 999,
-		/obj/item/chargen_box/industrial/glass = 999,
-		/obj/item/chargen_box/industrial/plastic = 999,
-		/obj/item/chargen_box/industrial/cable = 999,
-		/obj/item/chargen_box/industrial/autolathe = 999,
-		/obj/item/chargen_box/industrial/mining = 999,
-		/obj/item/chargen_box/industrial/chem_suit = 999,
-		/obj/item/chargen_box/industrial/pick = 999,
-		/obj/item/chargen_box/industrial/ore_processor = 999,
-		/obj/item/chargen_box/industrial/stirling = 999
+		/obj/item/chargen_box/industrial/engineering = 20,
+		/obj/item/chargen_box/industrial/firefighter = 20,
+		/obj/item/chargen_box/industrial/building = 20,
+		/obj/item/chargen_box/industrial/steel = 20,
+		/obj/item/chargen_box/industrial/glass = 20,
+		/obj/item/chargen_box/industrial/plastic = 20,
+		/obj/item/chargen_box/industrial/cable = 20,
+		/obj/item/chargen_box/industrial/autolathe = 20,
+		/obj/item/chargen_box/industrial/mining = 20,
+		/obj/item/chargen_box/industrial/chem_suit = 20,
+		/obj/item/chargen_box/industrial/pick = 20,
+		/obj/item/chargen_box/industrial/ore_processor = 20,
+		/obj/item/chargen_box/industrial/stirling = 20
 	)
 
 /obj/machinery/vending/infini/industrial/basic
@@ -34,11 +34,12 @@
 	vend_delay = 11
 	base_type = /obj/machinery/vending/infini/industrial/basic
 	products = list(
-		/obj/item/chargen_box/industrial/engineering = 999,
-		/obj/item/chargen_box/industrial/firefighter = 999,
-		/obj/item/chargen_box/industrial/autolathe = 999,
-		/obj/item/chargen_box/industrial/mining = 999,
-		/obj/item/chargen_box/industrial/pick = 999,
-		/obj/item/chargen_box/industrial/ore_processor = 999,
-		/obj/item/chargen_box/industrial/stirling = 999
+		/obj/item/chargen_box/industrial/engineering = 20,
+		/obj/item/chargen_box/industrial/firefighter = 20,
+		/obj/item/chargen_box/industrial/building = 20,
+		/obj/item/chargen_box/industrial/autolathe = 20,
+		/obj/item/chargen_box/industrial/mining = 20,
+		/obj/item/chargen_box/industrial/pick = 20,
+		/obj/item/chargen_box/industrial/ore_processor = 20,
+		/obj/item/chargen_box/industrial/stirling = 20
 	)

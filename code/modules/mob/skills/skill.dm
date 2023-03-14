@@ -218,17 +218,6 @@ var/global/list/skills = list()
 		"Master"      = "You specialize in hand-to-hand combat. You're well-trained in a practical martial art, and in good shape. You spend a lot of time practicing. You can take on just about anyone, use just about any weapon, and usually come out on top. You may be a professional athlete or special forces member."
 	)
 
-/decl/hierarchy/skill/security/combat/get_cost(var/level)
-	switch(level)
-		if(SKILL_BASIC)
-			return difficulty
-		if(SKILL_ADEPT, SKILL_EXPERT)
-			return 2*difficulty
-		if(SKILL_PROF)
-			return 4*difficulty
-		else
-			return 0
-
 /decl/hierarchy/skill/security/weapons
 	name = "Weapons Expertise"
 	uid =  "skill_weapons"
@@ -240,17 +229,6 @@ var/global/list/skills = list()
 		"Experienced" = "You've used firearms and other ranged weapons in high-stress situations, and your skills have become automatic. Your aim is good.",
 		"Master"      = "You are an exceptional shot with a variety of weapons, from simple to exotic. You use a weapon as naturally as though it were a part of your own body. You may be a sniper or special forces operator of some kind.<br>- You get extra accuracy for sniper rifles.<br>- You automatically eject shells from bolt-action firearms."
 	)
-
-/decl/hierarchy/skill/security/weapons/get_cost(var/level)
-	switch(level)
-		if(SKILL_BASIC)
-			return difficulty
-		if(SKILL_ADEPT)
-			return 2*difficulty
-		if(SKILL_EXPERT, SKILL_PROF)
-			return 4*difficulty
-		else
-			return 0
 
 /decl/hierarchy/skill/security/forensics
 	name = "Forensics"

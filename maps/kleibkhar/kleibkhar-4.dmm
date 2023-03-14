@@ -601,6 +601,13 @@
 	},
 /turf/simulated/floor,
 /area/kleibkhar/atmos_pump)
+"CU" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/abstract/level_data/atmoschange,
+/turf/simulated/floor,
+/area/exoplanet/kleibkhar/sky)
 
 (1,1,1) = {"
 aa
@@ -17077,7 +17084,7 @@ aF
 aK
 aK
 aK
-aK
+CU
 aK
 aK
 aK

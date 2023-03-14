@@ -91,7 +91,7 @@
 
 			var/obj/source_material = pop(stored_materials)
 			var/spawn_type = pop(spawning_types)
-			var/obj/spawned_obj = new spawn_type(src.loc)
+			var/obj/spawned_obj = new spawn_type(rand(10,10))
 			if(source_material)
 				if(length(source_material.name) < MAX_MESSAGE_LEN)
 					spawned_obj.SetName("[source_material] " +  spawned_obj.name)
