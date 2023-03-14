@@ -111,7 +111,7 @@
 	task_started_on = world.time
 	var/datum/computer_file/data/cloning/cloneFile = new()
 	cloneFile.initialize_backup(occupant)
-	scan = new(null, filesource, cloneFile)
+	scan = new(null, filesource, null, cloneFile)
 	current_task = addtimer(CALLBACK(src, /datum/extension/network_device/cloning_pod/proc/finish_scan), TASK_SCAN_TIME, TIMER_STOPPABLE)
 	to_chat(occupant, SPAN_NOTICE("Lights flash around you as a cortical scan begins."))
 
