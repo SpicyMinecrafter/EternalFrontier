@@ -34,7 +34,7 @@
 
 	starting_money = 5000
 	department_money = 0
-	salary_modifier = 0.2
+	salary_modifier = 20
 
 /datum/map/kleibkhar/get_map_info()
 	return "Several years ago the galactic war ended with most worlds completely destroyed. Many homeworlds were lost and Earth was among them. The remnants of each species scatters to avoid the lawless populated systems or what was left of them. One way or another you found yourself here, ready to start a new life on a cold yet habitable rimworld."
