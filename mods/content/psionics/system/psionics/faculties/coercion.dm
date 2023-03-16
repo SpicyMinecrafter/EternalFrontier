@@ -137,39 +137,7 @@
 				target.visible_message(SPAN_DANGER("\The [target] drops what they were holding as their [E ? E.name : "hand"] spasms!"))
 		return TRUE
 
-/decl/psionic_power/coercion/mindslave
-	name =          "Mindslave"
-	cost =          28
-	cooldown =      200
-	use_grab =      TRUE
-	min_rank =      PSI_RANK_PARAMOUNT
-	use_description = "Grab a victim, target the eyes, then use the grab on them while on disarm intent, in order to convert them into a loyal mind-slave. The process takes some time, and failure is punished harshly."
 
-/decl/psionic_power/coercion/mindslave/invoke(var/mob/living/user, var/mob/living/target)
-	if(!istype(target) || user.zone_sel.selecting != BP_EYES)
-		return FALSE
-	. = ..()
-	if(.)
-		if(target.stat == DEAD || (target.status_flags & FAKEDEATH))
-			to_chat(user, "<span class='warning'>\The [target] is dead!</span>")
-			return TRUE
-		if(!target.mind || !target.key)
-			to_chat(user, "<span class='warning'>\The [target] is mindless!</span>")
-			return TRUE
-		var/decl/special_role/thrall/thralls = GET_DECL(/decl/special_role/thrall)
-		if(thralls.is_antagonist(target.mind))
-			to_chat(user, "<span class='warning'>\The [target] is already in thrall to someone!</span>")
-			return TRUE
-		user.visible_message("<span class='danger'><i>\The [user] seizes the head of \the [target] in both hands...</i></span>")
-		to_chat(user, "<span class='warning'>You plunge your mentality into that of \the [target]...</span>")
-		to_chat(target, "<span class='danger'>Your mind is invaded by the presence of \the [user]! They are trying to make you a slave!</span>")
-		if(!do_after(user, target.stat == CONSCIOUS ? 80 : 40, target, 0, 1))
-			user.psi.backblast(rand(10,25))
-			return TRUE
-		to_chat(user, "<span class='danger'>You sear through \the [target]'s neurons, reshaping as you see fit and leaving them subservient to your will!</span>")
-		to_chat(target, "<span class='danger'>Your defenses have eroded away and \the [user] has made you their mindslave.</span>")
-		thralls.add_antagonist(target.mind, new_controller = user)
-		return TRUE
 
 /decl/psionic_power/coercion/assay
 	name =            "Assay"
