@@ -38,6 +38,18 @@
 		/decl/material/solid/metal/steel = MATTER_AMOUNT_TRACE
 	)
 
+/obj/item/clothing/under/sheriff
+	name = "Sheriff deputy's jumpsuit"
+	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
+	icon = 'icons/clothing/under/sheriff.dmi'
+	armor = list(
+		ARMOR_MELEE = ARMOR_MELEE_SMALL
+	)
+	siemens_coefficient = 0.9
+	matter = list(
+		/decl/material/solid/metal/steel = MATTER_AMOUNT_TRACE
+	)
+
 /obj/item/clothing/under/dispatch
 	name = "dispatcher's uniform"
 	desc = "A dress shirt and khakis with a security patch sewn on."

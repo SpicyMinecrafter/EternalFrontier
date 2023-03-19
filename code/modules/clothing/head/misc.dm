@@ -5,6 +5,13 @@
 	siemens_coefficient = 0.9
 	body_parts_covered = 0
 
+/obj/item/clothing/head/campagin
+	name = "\improper Deputy. Stesen"
+	desc = "Respect my Authrotah."
+	icon = 'icons/clothing/head/sheriff_hat.dmi'
+	siemens_coefficient = 0.9
+	body_parts_covered = 0
+
 /obj/item/clothing/head/hairflower
 	name = "hair flower pin"
 	icon = 'icons/clothing/head/hairflower/red.dmi'
