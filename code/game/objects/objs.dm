@@ -294,8 +294,10 @@
 		return SPAN_WARNING("It looks slightly damaged.")
 	else if(health_ratio > 0.25)
 		return SPAN_WARNING("It looks moderately damaged.")
-	else
+	else if(health_ratio > 0)
 		return SPAN_DANGER("It looks heavily damaged.")
+	else
+		return SPAN_NOTICE("It looks fully intact.")
 
 //
 // Alt Interactions
