@@ -30,14 +30,14 @@
 	name = "Rogue Cutter Drone"
 	desc = "A junky looking mining robot with some kind of small-bore gun."
 	ranged = 1
-	speed = 7
+	speed = 8
 
 /mob/living/simple_animal/hostile/hivebot/rapid
 	name = "Rogue Multi-Cutter Drone"
-	desc = "A junky looking mining robot with multiple small-bore guns."
+	desc = "A junky looking mining robot with multiple small-bore guns. It looks dangerous!"
 	ranged = 1
 	rapid = 1
-	speed = 9
+	speed = 10
 
 /mob/living/simple_animal/hostile/hivebot/strong
 	name = "Rogue Advanced Cutter Drone"
@@ -46,7 +46,7 @@
 	maxHealth = 120
 	ranged = 1
 	can_escape = 1
-	speed = 10
+	speed = 11
 	natural_armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_RESISTANT
 		)

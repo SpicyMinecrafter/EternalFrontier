@@ -9,14 +9,13 @@
 
 /obj/random/hostile/spawn_choices()
 	var/static/list/spawnable_choices = list(
-		/mob/living/simple_animal/hostile/hivebot/mega =        1,
 		/mob/living/simple_animal/hostile/hivebot/tele =        1,
 		/mob/living/simple_animal/hostile/hivebot/tele/range =  1,
 		/mob/living/simple_animal/hostile/hivebot/tele/strong = 1,
-		/mob/living/simple_animal/hostile/hivebot =             1000,
-		/mob/living/simple_animal/hostile/hivebot/range =       100,
-		/mob/living/simple_animal/hostile/hivebot/rapid =       100,
-		/mob/living/simple_animal/hostile/hivebot/strong =      50,
+		/mob/living/simple_animal/hostile/hivebot =             100,
+		/mob/living/simple_animal/hostile/hivebot/range =       5,
+		/mob/living/simple_animal/hostile/hivebot/rapid =       2,
+		/mob/living/simple_animal/hostile/hivebot/strong =      1,
 	)
 	return spawnable_choices
 
