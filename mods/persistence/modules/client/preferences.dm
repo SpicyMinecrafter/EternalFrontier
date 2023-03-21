@@ -79,14 +79,14 @@
 			to_chat(usr, "<span class='danger'>[real_name] is already a name in use! Please select a different name.</span>")
 			real_name = null
 			return
-		var/slots = 2
+		var/slots = 1
 		if(check_rights(R_DEBUG) || check_rights(R_ADMIN))
 			slots+=0
-		var/count = 1
+		var/count = 0
 		char_query = dbcon.NewQuery("SELECT `key` FROM `limbo` WHERE `type` = '[LIMBO_MIND]' AND `metadata` = '[client.key]'")
 		if(!char_query.Execute())
 			to_world_log("CHARACTER DESERIALIZATION FAILED: [char_query.ErrorMsg()].")
-		for(var/i=1, i>=slots, i++)
+		for(var/i=0, i>=slots, i++)
 			if(char_query.NextRow()) count++
 		if(count >= slots)
 			to_chat(usr, "<span class='danger'>You already have the maximum amount of characters. You must delete one to create another.</span>")
