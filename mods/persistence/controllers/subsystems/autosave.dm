@@ -52,7 +52,8 @@ SUBSYSTEM_DEF(autosave)
 		to_world("<font size=4 color='green'>World save complete!</font>")
 
 		if(check_for_restart && reset_after_save)
-			to_world("<font size=4 color='red'>Server is going down NOW!</font>")
+			to_world("<font size=4 color='red'>Server is going to restart in two minutes!</font>")
+			sleep(120)
 			world.Reboot()
 
 		last_save = world.time
