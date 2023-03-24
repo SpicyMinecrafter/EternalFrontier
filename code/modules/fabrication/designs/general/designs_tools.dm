@@ -50,3 +50,12 @@
 
 /datum/fabricator_recipe/tool/mobile_ladder
 	path = /obj/item/mobile_ladder
+
+/datum/fabricator_recipe/tool/paint_sprayer
+	path = /obj/item/paint_sprayer
+
+/datum/fabricator_recipe/tool/duct_tape
+	path = /obj/item/stack/tape_roll/duct_tape
+
+/datum/fabricator_recipe/tool/mousetrap
+	path = /obj/item/assembly/mousetrap

@@ -164,3 +164,4 @@
 
 /datum/fabricator_recipe/network_pos
 	path = /obj/item/network_pos
+

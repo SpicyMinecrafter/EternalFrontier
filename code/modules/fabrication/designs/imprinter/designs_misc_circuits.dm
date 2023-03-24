@@ -493,3 +493,7 @@
 
 /datum/fabricator_recipe/imprinter/circuit/photocopier
 	path = /obj/item/stock_parts/circuitboard/photocopier
+
+/datum/fabricator_recipe/imprinter/circuit/banking_mainframe
+	path = /obj/item/stock_parts/circuitboard/banking_mainframe
+
