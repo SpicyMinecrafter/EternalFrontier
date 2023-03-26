@@ -64,6 +64,9 @@
 
 /datum/fabricator_recipe/protolathe/tool/adv_reagent_scanner
 	path = /obj/item/scanner/reagent/adv
+	
+/datum/fabricator_recipe/protolathe/tool/ore_detector
+	path = /obj/item/scanner/mining
 
 /datum/fabricator_recipe/protolathe/tool/nanopaste
 	path = /obj/item/stack/nanopaste
