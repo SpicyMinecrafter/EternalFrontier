@@ -35,7 +35,7 @@
 
 /mob/living/bot/farmbot/GetInteractTitle()
 	. = "<head><title>Farmbot controls</title></head>"
-	. += "<b>Automatic Hyrdoponic Assisting Unit v1.0</b>"
+	. += "<b>Automatic Hydroponic Assisting Unit v1.0</b>"
 
 /mob/living/bot/farmbot/GetInteractStatus()
 	. = ..()
