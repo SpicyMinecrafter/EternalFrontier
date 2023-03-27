@@ -34,3 +34,6 @@
 
 /datum/fabricator_recipe/textiles/space/salvage
 	path = /obj/item/clothing/suit/space/void/engineering/salvage
+
+/datum/fabricator_recipe/textiles/space/rig
+	path = /obj/item/rig
