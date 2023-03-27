@@ -36,7 +36,7 @@
 /decl/material/solid/stone/granite
 	name                 = "granite"
 	uid                  = "solid_granite"
-	lore_text            = "A coarse-grained igneous rock formed by magma containing sillicon and alkali metal oxides."
+	lore_text            = "A coarse-grained igneous rock formed by magma containing silicon and alkali metal oxides."
 	color                = "#615f5f"
 	exoplanet_rarity     = MAT_RARITY_MUNDANE
 	hardness             = MAT_VALUE_HARD + 5
