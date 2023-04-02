@@ -64,3 +64,27 @@
 
 /datum/fabricator_recipe/protolathe/rig/integrated_printer
 	path = /obj/item/integrated_circuit_printer
+
+/datum/fabricator_recipe/protolathe/rig/
+	path = /obj/item/rig
+
+/datum/fabricator_recipe/protolathe/rig/industrial
+	path = /obj/item/rig/industrial
+
+/datum/fabricator_recipe/protolathe/rig/eva
+	path = /obj/item/rig/eva
+
+/datum/fabricator_recipe/protolathe/rig/ce
+	path = /obj/item/rig/ce
+
+/datum/fabricator_recipe/protolathe/rig/hazmat
+	path = /obj/item/rig/hazmat
+
+/datum/fabricator_recipe/protolathe/rig/medical
+	path = /obj/item/rig/medical
+
+/datum/fabricator_recipe/protolathe/rig/zero
+	path = /obj/item/rig/zero
+
+/datum/fabricator_recipe/protolathe/rig/hazard
+	path = /obj/item/rig/hazard

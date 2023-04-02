@@ -189,6 +189,7 @@
 	suit_type = "hazmat hardsuit"
 	desc = "An Anomalous Material Interaction hardsuit, a cutting-edge design, protects the wearer against the strangest energies the universe can throw at it."
 	icon = 'icons/clothing/rigs/rig_science.dmi'
+	origin_tech = "{'materials':12, 'engineering':21, 'powerstorage':12, 'biotech':6}"
 	armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_RESISTANT,
 		ARMOR_BULLET = ARMOR_BALLISTIC_MINOR,
@@ -235,6 +236,7 @@
 	suit_type = "rescue hardsuit"
 	desc = "A durable suit designed for medical rescue in high risk areas."
 	icon = 'icons/clothing/rigs/rig_medical.dmi'
+	origin_tech = "{'materials':12, 'engineering':21, 'powerstorage':12, 'biotech':12}"
 	armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_RESISTANT,
 		ARMOR_BULLET = ARMOR_BALLISTIC_MINOR,
@@ -254,7 +256,7 @@
 
 	allowed = list(/obj/item/flashlight,/obj/item/tank,/obj/item/suit_cooling_unit,/obj/item/storage/firstaid,/obj/item/scanner/health,/obj/item/scanner/breath,/obj/item/stack/medical,/obj/item/roller,/obj/item/auto_cpr,/obj/item/inflatable_dispenser)
 
-	req_access = list(access_medical_equip)
+	req_access = list()
 
 /obj/item/clothing/head/helmet/space/rig/medical
 	camera = /obj/machinery/camera/network/medbay
@@ -281,6 +283,7 @@
 	suit_type = "hazard hardsuit"
 	desc = "A security hardsuit designed for prolonged EVA in dangerous environments."
 	icon = 'icons/clothing/rigs/rig_hazard.dmi'
+	origin_tech = "{'materials':12, 'engineering':21, 'powerstorage':12, 'combat':9}"
 	armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_MAJOR,
 		ARMOR_BULLET = ARMOR_BALLISTIC_PISTOL,
@@ -327,6 +330,7 @@
 	suit_type = "null hardsuit"
 	desc = "A very lightweight suit designed to allow use inside mechs and starfighters. It feels like you're wearing nothing at all."
 	icon = 'icons/clothing/rigs/rig_null.dmi'
+	origin_tech = "{'materials':6, 'engineering':12, 'powerstorage':6}"
 	armor = list(
 		ARMOR_BIO = ARMOR_BIO_SHIELDED,
 		ARMOR_RAD = ARMOR_RAD_MINOR
