@@ -75,3 +75,12 @@
 	required_reagents = list(/decl/material/liquid/plasticide = 1, /decl/material/liquid/water = 3)
 	result_amount = 5
 	mix_message = "The solution thickens and takes on a glossy sheen."
+
+/decl/chemical_reaction/cement
+	name = "Cement"
+	result = /decl/material/liquid/cement
+	required_reagents = list(/decl/material/solid/metal/aluminium = 1, /decl/material/solid/metal/iron = 1, /decl/material/solid/silicon = 2, /decl/material/solid/sulfur = 1)
+	result_amount = 5
+	minimum_temperature = 200 CELSIUS
+	maximum_temperature = INFINITY CELSIUS
+	mix_message = "The solution sinters into a rough grey powder."

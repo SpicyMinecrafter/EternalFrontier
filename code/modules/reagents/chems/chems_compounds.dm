@@ -432,3 +432,17 @@
 		M.adjustBruteLoss(rand(3,6))
 		if(prob(10))
 			new /obj/item/shard(get_turf(M), result_mat)
+
+/decl/material/solid/cement //for making concrete bricks
+	name = "cement"
+	uid = "chem_cement"
+	lore_text = "A common binder, used to bind aggregate into solid bricks."
+	taste_description = "acidic and gritty"
+	color = "#D9D9D6"
+	melting_point = 2,613
+	boiling_point = 2,850
+	molar_mass = 0.056 //cement (actually calcium oxide which is one of the compounds in hydraulic cement, but the wiki contained no info on the molar mass of that)
+	dirtiness = 20
+	default_solid_form = /obj/item/stack/material/powder
+	toxicity = 5
+	taste_mult = 1.2

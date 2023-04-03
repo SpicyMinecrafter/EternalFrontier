@@ -355,3 +355,12 @@
 
 /obj/item/stack/material/strut/get_recipes()
 	return material.get_strut_recipes(reinf_material && reinf_material.type)
+
+/obj/item/stack/material/powder
+	name = "powder"
+	singular_name = "powder"
+	plural_name = "powder"
+	icon_state = "powder"
+	plural_icon_state = "powder-mult"
+	max_icon_state = "powder-max"
+	stack_merge_type = /obj/item/stack/material/powder

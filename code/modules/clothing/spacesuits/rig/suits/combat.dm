@@ -3,6 +3,7 @@
 	desc = "A sleek and dangerous hardsuit for active combat."
 	suit_type = "combat hardsuit"
 	icon = 'icons/clothing/rigs/rig_security.dmi'
+	origin_tech = "{'materials':4, 'engineering':6, 'powerstorage':4, 'combat':4 }"
 	armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_VERY_HIGH,
 		ARMOR_BULLET = ARMOR_BALLISTIC_RIFLE,

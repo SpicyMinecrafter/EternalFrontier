@@ -5,6 +5,7 @@
 	suit_type = "light suit"
 	icon = 'icons/clothing/rigs/rig_light.dmi'
 	allowed = list(/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/baton,/obj/item/handcuffs,/obj/item/tank,/obj/item/suit_cooling_unit,/obj/item/cell)
+	origin_tech = "{'materials':3, 'engineering':4, 'powerstorage':3 }"
 	armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_KNIVES,
 		ARMOR_BULLET = ARMOR_BALLISTIC_PISTOL,

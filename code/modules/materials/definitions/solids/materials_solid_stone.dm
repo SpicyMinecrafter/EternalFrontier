@@ -80,14 +80,7 @@
 	reflectiveness = MAT_VALUE_SHINY
 	construction_difficulty = MAT_VALUE_HARD_DIY
 
-/decl/material/solid/stone/concrete
-	name = "concrete"
-	uid = "solid_concrete"
-	lore_text = "The most ubiquitous building material of old Earth, now in space. Consists of mineral aggregate bound with some sort of cementing solution."
-	color = COLOR_GRAY
-	value = 0.9
-	exoplanet_rarity = MAT_RARITY_NOWHERE
-	var/image/texture
+
 
 /decl/material/solid/stone/concrete/Initialize()
 	. = ..()
@@ -116,3 +109,13 @@
 /decl/material/solid/stone/cult/reinforced
 	name = "runic inscriptions"
 	uid = "solid_runes_cult"
+
+/decl/material/solid/stone/concrete
+	name = "concrete"
+	uid = "solid_concrete"
+	lore_text = "The most ubiquitous building material of old Earth, now in space. Consists of mineral aggregate bound with some sort of cementing solution."
+	color = COLOR_GRAY
+	value = 0.9
+	integrity = 300
+	exoplanet_rarity = MAT_RARITY_NOWHERE
+	var/image/texture

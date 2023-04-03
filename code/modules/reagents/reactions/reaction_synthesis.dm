@@ -105,17 +105,6 @@
 	if(location)
 		SSmaterials.create_object(/decl/material/solid/plastic, location, created_volume)
 
-/decl/chemical_reaction/synthesis/concreting
-	name = "Concrete"
-	required_reagents = list(/decl/material/solid/silicon = 3, /decl/material/liquid/plasticide = 1, /decl/material/liquid/water = 2) //idk if this is the right ratio, i made it up
-	mix_message = "The solution solidifies into a rocky-grey mass."
-
-/decl/chemical_reaction/synthesis/concreting/on_reaction(var/datum/reagents/holder, var/created_volume, var/reaction_flags)
-	..()
-	var/location = get_turf(holder.get_reaction_loc())
-	if(location)
-		SSmaterials.create_object(/decl/material/solid/stone/concrete, location, created_volume)
-
 /decl/chemical_reaction/synthesis/resin_pack
 	name = "Resin Globule"
 	required_reagents = list(
@@ -132,3 +121,14 @@
 		var/create_stacks = FLOOR(created_volume)
 		if(create_stacks > 0)
 			new /obj/item/stack/medical/resin/handmade(T, create_stacks)
+
+/decl/chemical_reaction/synthesis/concreting
+	name = "Concrete"
+	required_reagents = list(/decl/material/solid/silicon = 3, /decl/material/liquid/cement = 3, /decl/material/liquid/water = 2) //idk if this is the right ratio, i made it up
+	mix_message = "The solution solidifies into a rocky-grey mass."
+
+/decl/chemical_reaction/synthesis/concreting/on_reaction(var/datum/reagents/holder, var/created_volume, var/reaction_flags)
+	..()
+	var/location = get_turf(holder.get_reaction_loc())
+	if(location)
+		SSmaterials.create_object(/decl/material/solid/stone/concrete, location, created_volume)

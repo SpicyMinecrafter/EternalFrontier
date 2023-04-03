@@ -10,7 +10,7 @@
 
 	allowed = list(/obj/item/flashlight,/obj/item/tank,/obj/item/suit_cooling_unit,/obj/item/storage/briefcase, /obj/item/storage/secure/briefcase)
 
-	req_access = list(access_lawyer)
+	req_access = list()
 
 	gloves = FALSE
 	helmet = FALSE
@@ -37,6 +37,7 @@
 	suit_type = "industrial hardsuit"
 	desc = "A heavy, powerful rig used by construction crews and mining corporations."
 	icon = 'icons/clothing/rigs/rig.dmi'
+	origin_tech = "{'materials':4, 'engineering':6, 'powerstorage':4, 'magnets':4 }"
 	armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_MAJOR,
 		ARMOR_BULLET = ARMOR_BALLISTIC_PISTOL,
@@ -107,7 +108,7 @@
 
 	allowed = list(/obj/item/flashlight,/obj/item/tank,/obj/item/suit_cooling_unit,/obj/item/storage/toolbox,/obj/item/storage/briefcase/inflatable,/obj/item/inflatable_dispenser,/obj/item/t_scanner,/obj/item/rcd)
 
-	req_access = list(access_engine_equip)
+	req_access = list()
 
 /obj/item/clothing/head/helmet/space/rig/eva
 	light_overlay = "helmet_light_dual"
@@ -154,7 +155,7 @@
 
 	allowed = list(/obj/item/gun,/obj/item/flashlight,/obj/item/tank,/obj/item/suit_cooling_unit,/obj/item/storage/ore,/obj/item/storage/toolbox,/obj/item/storage/briefcase/inflatable,/obj/item/inflatable_dispenser,/obj/item/t_scanner,/obj/item/pickaxe,/obj/item/rcd)
 
-	req_access = list(access_ce)
+	req_access = list()
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
 	min_pressure_protection = 0
 
@@ -189,7 +190,7 @@
 	suit_type = "hazmat hardsuit"
 	desc = "An Anomalous Material Interaction hardsuit, a cutting-edge design, protects the wearer against the strangest energies the universe can throw at it."
 	icon = 'icons/clothing/rigs/rig_science.dmi'
-	origin_tech = "{'materials':12, 'engineering':21, 'powerstorage':12, 'biotech':6}"
+	origin_tech = "{'materials':4, 'engineering':5, 'powerstorage':4, 'exoticmatter':6}"
 	armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_RESISTANT,
 		ARMOR_BULLET = ARMOR_BALLISTIC_MINOR,
@@ -210,7 +211,7 @@
 	allowed = list(/obj/item/flashlight,/obj/item/tank,/obj/item/suit_cooling_unit,/obj/item/stack/flag,/obj/item/storage/excavation,/obj/item/pickaxe,/obj/item/scanner/health,/obj/item/scanner/breath,/obj/item/measuring_tape,/obj/item/ano_scanner,/obj/item/depth_scanner,/obj/item/core_sampler,/obj/item/gps,/obj/item/pinpointer/radio,/obj/item/radio/beacon,/obj/item/pickaxe/xeno,/obj/item/storage/bag/fossils)
 
 	anomaly_shielding = 1
-	req_access = list(access_tox)
+	req_access = list()
 
 /obj/item/clothing/head/helmet/space/rig/hazmat
 	light_overlay = "helmet_light_dual"
@@ -236,7 +237,7 @@
 	suit_type = "rescue hardsuit"
 	desc = "A durable suit designed for medical rescue in high risk areas."
 	icon = 'icons/clothing/rigs/rig_medical.dmi'
-	origin_tech = "{'materials':12, 'engineering':21, 'powerstorage':12, 'biotech':12}"
+	origin_tech = "{'materials':4, 'engineering':5, 'powerstorage':4, 'biotech':5}"
 	armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_RESISTANT,
 		ARMOR_BULLET = ARMOR_BALLISTIC_MINOR,
@@ -283,7 +284,7 @@
 	suit_type = "hazard hardsuit"
 	desc = "A security hardsuit designed for prolonged EVA in dangerous environments."
 	icon = 'icons/clothing/rigs/rig_hazard.dmi'
-	origin_tech = "{'materials':12, 'engineering':21, 'powerstorage':12, 'combat':9}"
+	origin_tech = "{'materials':4, 'engineering':5, 'powerstorage':4, 'combat':2}"
 	armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_MAJOR,
 		ARMOR_BULLET = ARMOR_BALLISTIC_PISTOL,
@@ -330,7 +331,6 @@
 	suit_type = "null hardsuit"
 	desc = "A very lightweight suit designed to allow use inside mechs and starfighters. It feels like you're wearing nothing at all."
 	icon = 'icons/clothing/rigs/rig_null.dmi'
-	origin_tech = "{'materials':6, 'engineering':12, 'powerstorage':6}"
 	armor = list(
 		ARMOR_BIO = ARMOR_BIO_SHIELDED,
 		ARMOR_RAD = ARMOR_RAD_MINOR

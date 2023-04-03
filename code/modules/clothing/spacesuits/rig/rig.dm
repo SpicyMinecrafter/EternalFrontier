@@ -14,7 +14,7 @@
 	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_HUGE
 	center_of_mass = null
-	origin_tech = "{'materials':12, 'engineering':21, 'powerstorage':21}"
+	origin_tech = "{'materials':4, 'engineering':5, 'powerstorage':4}"
 	// These values are passed on to all component pieces.
 	armor_type = /datum/extension/armor/rig
 	armor = list(

@@ -65,8 +65,8 @@
 /datum/fabricator_recipe/protolathe/rig/integrated_printer
 	path = /obj/item/integrated_circuit_printer
 
-/datum/fabricator_recipe/protolathe/rig/
-	path = /obj/item/rig
+/datum/fabricator_recipe/protolathe/rig/light
+	path = /obj/item/rig/light
 
 /datum/fabricator_recipe/protolathe/rig/industrial
 	path = /obj/item/rig/industrial
@@ -88,3 +88,6 @@
 
 /datum/fabricator_recipe/protolathe/rig/hazard
 	path = /obj/item/rig/hazard
+
+/datum/fabricator_recipe/protolathe/rig/combat
+	path = /obj/item/rig/combat
