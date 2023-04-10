@@ -53,13 +53,13 @@
 /datum/fabricator_recipe/textiles/hat
 	category = "Headwear"
 	path = /obj/item/clothing/head/det
-	
+
 /datum/fabricator_recipe/textiles/hat/fedoragrey
 	path = /obj/item/clothing/head/det/grey
 
 /datum/fabricator_recipe/textiles/hat/fedoradisco
 	path = /obj/item/clothing/head/det/wack
-	
+
 /datum/fabricator_recipe/textiles/hat/bandanablack
 	path = /obj/item/clothing/mask/bandana
 
@@ -86,6 +86,21 @@
 
 /datum/fabricator_recipe/textiles/hat/skullsbandana
 	path = /obj/item/clothing/mask/bandana/skull
+
+/datum/fabricator_recipe/textiles/hat/kippa
+	path = /obj/item/clothing/head/kippa
+
+/datum/fabricator_recipe/textiles/hat/turban
+	path = /obj/item/clothing/head/turban
+
+/datum/fabricator_recipe/textiles/hat/taqiyah
+	path = /obj/item/clothing/head/taqiyah
+
+/datum/fabricator_recipe/textiles/hat/rastacap
+	path = /obj/item/clothing/head/rastacap
+
+/datum/fabricator_recipe/textiles/hat/padded
+	path = /obj/item/clothing/head/tank
 
 /datum/fabricator_recipe/textiles/glove
 	category = "Gloves"
