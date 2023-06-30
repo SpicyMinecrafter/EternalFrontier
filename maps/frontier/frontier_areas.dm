@@ -83,6 +83,35 @@
 	icon_state = "atmos"
 	is_outside = OUTSIDE_YES
 
+/area/kleibkhar/outpost/SGOffice
+	name = "SolGov Rep Office"
+	icon_state = "blue"
+
+/area/kleibkhar/outpost/hop
+	name = "Liason Office"
+	icon_state = "blue"
+
+/area/kleibkhar/outpost/RnD
+	name = "Research and Development"
+	icon_state = "red"
+
+/area/kleibkhar/outpost/Engineering
+	name = "Engineering"
+	icon_state = "blue"
+
+/area/kleibkhar/outpost/TerrOffice
+	name = "Terran Rep Office"
+	icon_state = "blue"
+
+/area/kleibkhar/outpost/Processing
+	name = "Jail Processing"
+	icon_state = "red"
+
+/area/kleibkhar/outpost/prisoncells
+	name = "Holding Cells"
+	icon_state = "blue"
+
+
 //
 // Planet Exterior
 //
